@@ -10,13 +10,13 @@
     buttons.forEach(function(button)  {
         button.addEventListener('click', function(e) {
             let value= e.target.innerText;
-             screen.value += value;
+             screen.value +="";
         })
     });
     
     equal.addEventListener('click',function(e){
         if(screen.value === ''){
-            screen.value = "click";
+            screen.value = "";
         }else{
             let answer =eval(screen.value);
             screen.value = answer;
